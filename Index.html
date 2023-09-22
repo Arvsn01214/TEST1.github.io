@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods Demo</title>
+</head>
+<body>
+    <h1>Array Methods Demo</h1>
+
+    <p>Click the buttons below to demonstrate array methods:</p>
+
+    <!-- Array and buttons -->
+    <script>
+        // Create an example array
+        var myArray = [1, 2, 3, 4, 5];
+
+        // Function to display array length
+        function showArrayLength() {
+            alert("Array length: " + myArray.length);
+        }
+
+        // Function to display array as a string
+        function showArrayAsString() {
+            alert("Array as string: " + myArray.toString());
+        }
+
+        // Function to remove the last element from the array
+        function popArrayElement() {
+            var poppedElement = myArray.pop();
+            alert("Popped element: " + poppedElement);
+            alert("Array after popping: " + myArray.toString());
+        }
+    </script>
+
+    <!-- Buttons to trigger array methods -->
+    <button onclick="showArrayLength()">Array Length</button>
+    <button onclick="showArrayAsString()">Array toString()</button>
+    <button onclick="popArrayElement()">Array pop()</button>
+</body>
+</html>
